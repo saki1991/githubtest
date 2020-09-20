@@ -1,0 +1,12 @@
+---
+- name: ec2 launch
+  hosts: localhost
+  Connection: Local
+  tasks:
+    - name: Launch instance
+      ec2:
+        key_name: AKIAWUQFMWVWPDMSZYHG
+        aws_secret_key: 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
+        instance_type: t2.micro
+        image: ami-00514a528eadbc95b
+        region: us-east-1
